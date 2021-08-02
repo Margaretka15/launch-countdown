@@ -1,0 +1,79 @@
+.countdown {
+  width: 100%;
+  text-align: center;
+
+  &__row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+
+  }
+
+  .card {
+
+    width: 140px;
+
+    text-align: center;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &__number-box {
+      font-size: 4.5rem;
+      background-color: $color-desaturated-blue;
+      color: $color-soft-red;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: .1rem .8rem 0 $color-very-dark-blue;
+      height: 140px;
+      position: relative;
+      overflow: hidden;
+
+      .number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:before,
+      &:after{
+        content: "";
+        background-color: $color-very-dark-blue;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+      }
+      &:before{
+        left: 0;
+        transform:translate(-50%, -50%);
+
+      }
+      &:after{
+        right: 0;
+        transform:translate(50%, -50%);
+
+      }
+
+    }
+
+    &__text {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: $color-grayish-blue;
+      letter-spacing: 5px;
+      display: inline;
+
+
+    }
+
+  }
+}

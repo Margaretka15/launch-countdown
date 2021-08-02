@@ -4,8 +4,19 @@
   "description": "![Design preview for the Launch countdown timer coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poocinka15/launch-countown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Poocinka15/launch-countown/issues"
+  },
+  "homepage": "https://github.com/Poocinka15/launch-countown#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
