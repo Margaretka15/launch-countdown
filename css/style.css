@@ -40,53 +40,58 @@ body {
 .attribution a {
   color: #3e52a3; }
 
-.countdown {
-  width: 100%;
-  text-align: center; }
-  .countdown__row {
+.countdown__row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex; }
+
+.countdown .card {
+  width: 140px;
+  text-align: center;
+  position: relative; }
+  .countdown .card:not(:last-child) {
+    margin-right: 25px; }
+  .countdown .card__number-box {
+    font-size: 4.5rem;
+    line-height: 1;
+    background-color: #343650;
+    color: #fb6087;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0.1rem 0.8rem 0 #191a24;
+    height: 140px;
+    position: relative;
+    overflow: hidden; }
+    .countdown .card__number-box .number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .countdown .card__number-box:before, .countdown .card__number-box:after {
+      content: "";
+      background-color: #191a24;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%; }
+    .countdown .card__number-box:before {
+      left: 0;
+      transform: translate(-50%, -50%); }
+    .countdown .card__number-box:after {
+      right: 0;
+      transform: translate(50%, -50%); }
+  .countdown .card__text {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #8486a9;
+    letter-spacing: 5px;
+    display: inline; }
+  .countdown .card__shadow {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(25, 26, 36, 0.3);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex; }
-  .countdown .card {
-    width: 140px;
-    text-align: center;
-    position: relative; }
-    .countdown .card:not(:last-child) {
-      margin-right: 25px; }
-    .countdown .card__number-box {
-      font-size: 4.5rem;
-      background-color: #343650;
-      color: #fb6087;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0.1rem 0.8rem 0 #191a24;
-      height: 140px;
-      position: relative;
-      overflow: hidden; }
-      .countdown .card__number-box .number {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-      .countdown .card__number-box:before, .countdown .card__number-box:after {
-        content: "";
-        background-color: #191a24;
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%; }
-      .countdown .card__number-box:before {
-        left: 0;
-        transform: translate(-50%, -50%); }
-      .countdown .card__number-box:after {
-        right: 0;
-        transform: translate(50%, -50%); }
-    .countdown .card__text {
-      text-transform: uppercase;
-      font-size: 12px;
-      color: #8486a9;
-      letter-spacing: 5px;
-      display: inline; }
+    z-index: 10; }

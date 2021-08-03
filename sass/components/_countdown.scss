@@ -1,6 +1,4 @@
 .countdown {
-  width: 100%;
-  text-align: center;
 
   &__row {
     position: absolute;
@@ -26,6 +24,7 @@
 
     &__number-box {
       font-size: 4.5rem;
+      line-height: 1;
       background-color: $color-desaturated-blue;
       color: $color-soft-red;
       border-radius: 10px;
@@ -73,6 +72,13 @@
       display: inline;
 
 
+    }
+    &__shadow{
+      width: 100%;
+      height: 50%;
+      background-color: rgba($color-very-dark-blue, .3);
+      position: absolute;
+      z-index: 10;
     }
 
   }
