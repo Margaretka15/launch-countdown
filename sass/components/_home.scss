@@ -28,12 +28,12 @@ body {
   text-transform: uppercase;
   font-size: $default-font-size;
   letter-spacing: 1.2rem;
-  //margin-bottom: 8rem;
-  position: absolute;
+  margin-bottom: 12rem;
+  //position: absolute;
 
-  top: -15rem;
+  //top: -15rem;
   text-align: center;
-  width: 100%;
+
 
   @include respond(tab-land)
   {
