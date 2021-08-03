@@ -1,4 +1,4 @@
-let countDownDate = new Date("Aug 3, 2021 14:05:10").getTime();
+let countDownDate = new Date("Aug 3, 2021 16:05:10").getTime();
 // console.log(countDownDate)
 
 let timeLeft;

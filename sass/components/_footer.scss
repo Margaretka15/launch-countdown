@@ -1,0 +1,26 @@
+.footer{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  &__icon{
+    margin-bottom: 2rem;
+    &:not(:last-child)
+    {
+      margin-right: 2rem;
+    }
+  }
+
+  .attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #828d9a;
+
+  }
+
+  .attribution a {
+    color: #b6bfc9;
+    text-decoration: none;
+  }
+}

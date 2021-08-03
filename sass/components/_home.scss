@@ -7,42 +7,33 @@ body {
 }
 
 .image{
-  width: 100%;
+  width: 100vh;
   user-select: none;
+  position: absolute;
   &--bottom{
-    position: absolute;
+
     bottom: 0;
     left: 0;
     width: 100%;
   }
   &--top{
-
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
   }
 }
 
 .heading--primary{
   text-transform: uppercase;
   font-size: $default-font-size;
-  letter-spacing: 1rem;
-  margin-bottom: 8rem;
-  position: absolute;
-  top: 10rem;
-  text-align: center;
-width: 100%;
-}
-
-
-
-
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
+  letter-spacing: 1.2rem;
+  //margin-bottom: 8rem;
   position: absolute;
 
-  bottom: 0;
+  top: -15rem;
+  text-align: center;
+  width: 100%;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+

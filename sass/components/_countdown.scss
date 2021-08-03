@@ -1,5 +1,7 @@
 .countdown {
-
+  position: relative;
+  top: 0;
+  height: 100vh;
   &__row {
     position: absolute;
     top: 50%;
@@ -13,24 +15,24 @@
 
   .card {
 
-    width: 140px;
+    width: 14rem;
 
     text-align: center;
     position: relative;
 
     &:not(:last-child) {
-      margin-right: 25px;
+      margin-right: 2.5rem;
     }
 
     &__number-box {
-      font-size: 4.5rem;
+      font-size: 6.5rem;
       line-height: 1;
       background-color: $color-desaturated-blue;
       color: $color-soft-red;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
       box-shadow: .1rem .8rem 0 $color-very-dark-blue;
-      height: 140px;
+      height: 14rem;
       position: relative;
       overflow: hidden;
 
@@ -45,8 +47,8 @@
       &:after{
         content: "";
         background-color: $color-very-dark-blue;
-        height: 15px;
-        width: 15px;
+        height: 1.5rem;
+        width: 1.5rem;
         border-radius: 50%;
         position: absolute;
         top: 50%;
@@ -66,9 +68,9 @@
 
     &__text {
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 1.2rem;
       color: $color-grayish-blue;
-      letter-spacing: 5px;
+      letter-spacing: .5rem;
       display: inline;
 
 

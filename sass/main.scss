@@ -1,8 +1,10 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 @import "base/typography";
 @import "base/base";
 
 @import "components/home";
+@import "components/footer";
 
 @import "components/countdown";
 
