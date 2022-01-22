@@ -10,12 +10,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Poocinka15/launch-countown.git"
+    "url": "git+https://github.com/Margaretka15/launch-countown.git"
   },
   "bugs": {
-    "url": "https://github.com/Poocinka15/launch-countown/issues"
+    "url": "https://github.com/Margaretka15/launch-countown/issues"
   },
-  "homepage": "https://github.com/Poocinka15/launch-countown#readme",
+  "homepage": "https://github.com/Margaretka15/launch-countown#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
   }
